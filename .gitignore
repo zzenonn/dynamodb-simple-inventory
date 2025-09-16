@@ -39,3 +39,4 @@ Thumbs.db
 # Custom patterns
 TODO*
 *.out
+*.env

@@ -131,6 +131,16 @@ curl -X POST http://localhost:8080/orders \
   -H "Content-Type: application/json" \
   -d '{"user_id":"john","address_key":"home"}'
 
+# Add items to order (replace ORDER_ID with actual order ID)
+curl -X POST http://localhost:8080/orders/ORDER_ID/items \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Laptop",
+    "description": "Gaming laptop",
+    "price": 1299.99,
+    "quantity": 1
+  }'
+
 # Get user orders
 curl http://localhost:8080/users/john/orders
 ```
